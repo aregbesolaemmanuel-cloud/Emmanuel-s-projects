@@ -19,5 +19,8 @@ To demonstrate the security risks of unencrypted HTTP traffic by intercepting lo
 ## Findings
 Because the website uses **HTTP (Port 80)** instead of **HTTPS (Port 443)**, the data was sent in "clear text." By using the "Follow HTTP Stream" feature, I was able to reconstruct the communication and see the password "Demo1234" clearly.
 
+![Wireshark Screenshot](Screenshot_2026-04-22_22_36_10.png)
+
+
 ## SOC Analyst Recommendation
 Organizations must enforce **TLS 1.2+ (HTTPS)** for all login pages to prevent Man-in-the-Middle (MITM) attacks.
